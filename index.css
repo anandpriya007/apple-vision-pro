@@ -1,0 +1,69 @@
+*{  /* this is the universal block which affects the whole page */
+    padding:0px;
+    margin:0px;
+}
+ body{   /*this affects the body part of the page  */
+        background-color: rgba(110, 229, 234, 0.816);
+        text-align: center;
+        align-items:center;
+}
+.gameName{      /* header text part for highlighting the Tic tac toe word*/
+    font-size:5rem;
+}
+.container{     /*outer div named container */
+    height:70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game{          /*inner div to conatin the 9 boxes of similar kind*/
+    width:70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    gap:1vmin;
+}
+.box{           /* box which contains the either X or O in it */
+    width:22vmin;
+    height:22vmin;
+    border-radius:1rem;
+    border:none;
+    background-color: beige;
+    font-size: 9vmin;
+    box-shadow: 0 0 1rem rgb(0,0,0,0.4);
+    color: rgb(172, 73, 73);
+}
+.msgContainer{  /* div contaning the msg part who is winner */
+    height: 50vmin;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    gap:5rem;
+}
+.msg{          /*mag class containing the message */
+    color:black;
+    font-size: 5vmin;
+}
+.hide{         /* class hide associated with msgcontainer class to hide the message and show message alernately */
+    display: none;
+}
+.new-game-btn{      /*new game button */
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color:cornflowerblue;
+    border-radius: 1rem;
+    border:none;
+    color: azure;
+}
+.reset-btn{     /*button to reset the whole game */
+    margin-top: 20px;
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color:cornflowerblue;
+    border-radius: 1rem;
+    border:none;
+    color: azure;
+}
